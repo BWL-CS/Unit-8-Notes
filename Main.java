@@ -28,5 +28,16 @@ public class Main {
       seatingChart[2][3] = ("Zoie");
       seatingChart[0][3] = ("Maia");
 
+      //INITIALIZER LIST
+      // alternate way to initialize array
+      // (when you know what values go where)
+      int[][] minefield = {{7, -20,0},{0,50,-15},{-10,12,20}};
+      
+      // ACCESS a value with the double index operator
+      // array[row][col]
+      System.out.println("You earned " + minefield[1][1] + " points");
+      //System.out.println("You earned " + minefield[][] + "points, yippee.");
+
+      
    }
 }

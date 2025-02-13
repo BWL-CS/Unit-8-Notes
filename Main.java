@@ -38,6 +38,34 @@ public class Main {
       System.out.println("You earned " + minefield[1][1] + " points");
       //System.out.println("You earned " + minefield[][] + "points, yippee.");
 
-      
+      // Nested loops are necessary to traverse 2D arrays
+      //ENHANCED FOR-EACH LOOP to "visit" all items in order
+      // OUTER LOOP iterates through each row
+      //IMPORTANT Data type of a ROW is a 1D Array
+      for (String[] row : seatingChart){
+         //INNER loop iterates through certain values
+         for(String col : row ) {
+            System.out.print(col + " ");
+
+
+
+         }
+         System.out.println(); // Line break between rows
+      }
+
+      // Cannot end for ech if you want to MODIFY VALUES
+      // or iterate in a different number
+      //STANDARD ("ndexed") FOR LOOP
+      for(int row = 0; row < minefield.length; row++){
+         // array[0].lenght represents NUMBER OF FOLUMNS in a row
+         for(int col =0; col < minefield[0].length; col++){
+            // if spot is a "bomb" (negative num, replace if
+            if(minefield[row][col] < 0){
+               minefield[row][col] = minefield[row][col] * -1;
+            }
+            System.out.print("[" + minefield[row][col] + "]");
+         }
+         System.out.println();
+      }
    }
 }

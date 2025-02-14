@@ -66,6 +66,25 @@ public class Main {
             System.out.print("[" + minefield[row][col] + "]");
          }
          System.out.println();
+
+      }
+
+      char[] asciArt = { 
+
+         {'m','m','m'},
+         {')','-','('},
+        {'(',' ',' ',' ',')'},
+        {'|',' ', ' ','|'},
+        {'|',' ',' ',' ','|'},
+        {'|','_','_','_','|'}
+      };
+
+      for(char[] row : asciArt){
+         for (char col : row){
+            System.out.println(col);
+            
+         }
+         System.out.println();
       }
    }
 }

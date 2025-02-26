@@ -57,7 +57,7 @@ public class Main {
       // or iterate in a different number
       //STANDARD ("ndexed") FOR LOOP
       for(int row = 0; row < minefield.length; row++){
-         // array[0].lenght represents NUMBER OF FOLUMNS in a row
+         // array[0].lenght represents NUMBER OF COLUMNS in a row
          for(int col =0; col < minefield[0].length; col++){
             // if spot is a "bomb" (negative num, replace if
             if(minefield[row][col] < 0){
@@ -69,7 +69,7 @@ public class Main {
 
       }
 
-      char[] asciArt = { 
+      /*char[] asciArt = { 
 
          {'m','m','m'},
          {')','-','('},
@@ -77,14 +77,16 @@ public class Main {
         {'|',' ', ' ','|'},
         {'|',' ',' ',' ','|'},
         {'|','_','_','_','|'}
-      };
+      };*/
 
-      for(char[] row : asciArt){
+      /*for(char[] row : asciArt){
          for (char col : row){
             System.out.println(col);
             
          }
          System.out.println();
       }
-   }
+   }*/
+}
+
 }
